@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+					   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+					   x:Class="xPlatAuction.AuctionItems">
+  <StackLayout Orientation="Vertical">
+    <ActivityIndicator IsVisible="{Binding IsLoading}" IsRunning="{Binding IsLoading}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></ActivityIndicator>
+    <ListView ItemTapped="Item_Tapped" ItemsSource="{Binding Items}">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <ViewCell.View>
+              <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <StackLayout Orientation="Vertical" HorizontalOptions="StartAndExpand" >
+                  <Label Text="{Binding Name}" Font="Medium" />
+                  <Label Text="{Binding Description}" />
+                </StackLayout>
+                <StackLayout Orientation="Vertical" WidthRequest="150" HorizontalOptions="End" >
+                  <Label Text="{Binding StartingBid, StringFormat='Starting: {0:c}'}" />
+                  <Label Text="{Binding CurrentBid, StringFormat='Current: {0:c}'}" />
+                </StackLayout>
+              </StackLayout>
+            </ViewCell.View>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+  </StackLayout>
+</ContentPage>

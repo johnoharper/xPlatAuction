@@ -1,0 +1,2 @@
+C:\Repos\GitHub\xPlatAuction\xPlatAuction\xPlatAuction.Android\obj\Debug\xPlatAuction.Android.csprojResolveAssemblyReference.cache
+C:\Repos\GitHub\xPlatAuction\xPlatAuction\xPlatAuction.Android\obj\Debug\xPlatAuction.Android.csproj.CoreCompileInputs.cache
